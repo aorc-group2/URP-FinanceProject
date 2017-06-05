@@ -1,0 +1,37 @@
+# Black-Scholes option pricing theory
+
+## Hedging and the partial differential equation
+
+The original derivation of the Black-Scholes partial differential equation was via stochastic calculus, Ito's lemma and a simple hedging argument (Black & Scholes, 1973).
+
+Assume that the underlying follows a lognormal random walk
+$$
+	dS = \mu S dt + \sigma S dX.
+$$
+Use $\Pi$ to denote the value of a portfolio of one long option position and a short position in some quantity $\Delta$ of the underlying:
+$$ 
+	\Pi = V(S,t) - \Delta S.
+$$
+
+The first term on the right is the option and the second term is the short asset position.
+
+Ask .... $t$ to $t+dt$.
+$$
+	d\Pi = dV -
+$$
+
+From Ito's lemma we have
+$$
+	d\Pi = \frac{\partial V}{\partial t}dt + \frac{\partial V}{\partial S}dS +
+	\frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2}dt -
+$$
+
+.....
+
+$$
+	d\Pi = \Big( \frac{\partial V}{\partial t} + ...\Big)dt.
+$$
+
+$$
+	V(S,T)=\max(S-K,0)
+$$
